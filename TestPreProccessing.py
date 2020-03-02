@@ -12,8 +12,9 @@ plt.show()
 ret,th1 = cv2.threshold(gray,70,130,cv2.THRESH_BINARY)
 ret,th2 = cv2.threshold(gray,120,255,cv2.THRESH_BINARY_INV)
 
-guas = cv2.adaptiveThreshold(gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,115,1)
-ret,th3 = cv2.threshold(gray,60,140,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+guas = cv2.adaptiveThreshold(gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
+guas = cv2.adaptiveThreshold(gray,255,cv2.ADAPTIVE_THRESH_MEAN_C,cv2.THRESH_BINARY,11,2)
+ret,th3 = cv2.threshold(gray,100,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
 kernel = np.ones((5,5),np.uint8)
 

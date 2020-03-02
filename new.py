@@ -19,7 +19,8 @@ titlesize = 24
 
 #input_image_file = ('https://data.kitware.com/api/v1/file/'
                     #'576ad39b8d777f1ecd6702f2/download')  # Easy1.png
-input_image_file = ('/home/lahiru/Pictures/Input.jpg')
+input_image_file = ('/home/lahiru/Pictures/small foci of tumour with background normal Edit.jpg')
+#/home/lahiru/Pictures/small foci of tumour with background normal.jpg   /home/lahiru/Pictures/Input.jpg
 
 im_input = skimage.io.imread(input_image_file)[:, :, :3]
 
